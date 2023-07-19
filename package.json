@@ -1,8 +1,23 @@
 {
-  "name": "player-snippet",
-  "private": true,
-  "version": "0.0.0",
+  "name": "streamonkey-player-snippet",
+  "private": false,
+  "description": "Snippet for easy integration of a streaMonkey player into a website",
+  "version": "0.0.1",
   "type": "module",
+  "files": [
+    "dist/streamonkey-player.iife.js"
+  ],
+  "author": "Alexander Stinka <alexander.stinka@streamonkey.de>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streamonkey/streamonkey-player-snippet"
+  },
+  "keywords": [
+    "streamonkey",
+    "radio",
+    "player"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,10 +31,9 @@
     "svelte-check": "^3.4.4",
     "tslib": "^2.6.0",
     "typescript": "^5.0.2",
-    "vite": "^4.4.0"
-  },
-  "dependencies": {
+    "vite": "^4.4.0",
     "sass": "^1.63.6",
     "streamonkey-player": "^1.3.1"
-  }
+  },
+  "dependencies": {}
 }
