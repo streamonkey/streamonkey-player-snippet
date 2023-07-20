@@ -50,7 +50,16 @@ interface SnippetOptions  {
 
 The documentation for advanced options can be found [here](https://github.com/streamonkey/streamonkey-player#additional-options).
 
-
+## Styling
+Colors can be set via variables in the parent container:
+```css
+    .myContainer {
+      --background-color: #e9f4f0;
+      --brand-color: #24b591;
+      --brand-color-2: #083a44;
+    }
+```
+Fonts will be inherited from this container.
 
 ## Browser Compatability
 This snippet uses container queries to determine it's size. A list of compatible browsers can be found [here](https://caniuse.com/css-container-queries).
