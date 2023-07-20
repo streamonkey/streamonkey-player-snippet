@@ -1,7 +1,8 @@
 # streamonkey-player-snippet
 This repository offers a premade player widget for integration of the [streamomkey-player](https://github.com/streamonkey/streamonkey-player) into a website. 
 
-This widget scales according and shows/hides elements according to its parent container. A demo implementation can be found within the examples folder.
+This widget scales according and shows/hides elements according to its parent container. A demo implementation can be found in the examples folder.
+
 
 ## Basic Usage
 
@@ -28,7 +29,8 @@ initStreamonkeyPlayer(myContainer, "[myMountPoint]", options);
 
 The mountPoint is your mount point name issued to you by streaMonkey and usually consists of the station name.
 
-# Options
+
+## Options
 
 ```js
 interface SnippetOptions  {
@@ -44,6 +46,11 @@ interface SnippetOptions  {
 }
 ```
 
-# Advanced Options
+## Advanced Options
 
 The documentation for advanced options can be found [here](https://github.com/streamonkey/streamonkey-player#additional-options).
+
+
+
+## Browser Compatability
+This snippet uses container queries to determine it's size. A list of compatible browsers can be found [here](https://caniuse.com/css-container-queries).
