@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/streamonkey-player-snippet@latest/dist/streamonkey-player.iife.js"></script>
+  </head>
+  <body>
+    <div class="audio-small"></div>
+    <div class="audio-resize"></div>
+    <div class="audio-bottom"></div>
+  </body>
+
+  <script>
+    const options = {
+      aggregator: "", // your aggregator here
+      covers: {
+        URL: "/cover",
+        fallback:
+          "https://www.xing.com/imagecache/public/scaled_original_image/eyJ1dWlkIjoiMDBmYjQ5MTktMTNmMC00ODQ5LWFkOTAtODdmNDdjMWQ4ZTViIiwiYXBwX2NvbnRleHQiOiJlbnRpdHktcGFnZXMiLCJtYXhfd2lkdGgiOjMyMCwibWF4X2hlaWdodCI6MzIwfQ?signature=cd54040bfab7c1be7a65601c20769a177c2eb16c025c1ccd1a699a0b6ebeca95",
+      },
+    };
+
+    let containerSmall = document.querySelector(".audio-small");
+    initStreamonkeyPlayer(containerSmall, "[your mount point here]", options);
+
+    let containerResize = document.querySelector(".audio-resize");
+    initStreamonkeyPlayer(containerResize, "[your mount point here]", options);
+
+    let containerBottom = document.querySelector(".audio-bottom");
+    initStreamonkeyPlayer(containerBottom, "[your mount point here]", options);
+  </script>
+  <style>
+    .audio-small {
+      width: 100px;
+      height: 100px;
+      --background-color: #e9f4f0;
+      --brand-color: #24b591;
+      --brand-color-2: #083a44;
+      margin-bottom: 2em;
+    }
+
+    .audio-resize {
+      width: 21vw;
+      height: 21vh;
+      --background-color: #e9f4f0;
+      --brand-color: #24b591;
+      --brand-color-2: #083a44;
+    }
+
+    .audio-bottom {
+      font-family: Arial, Helvetica, sans-serif;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      --background-color: #e9f4f0;
+      --brand-color: #24b591;
+      --brand-color-2: #083a44;
+    }
+  </style>
+</html>
