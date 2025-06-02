@@ -1,5 +1,5 @@
 # streamonkey-player-snippet
-This repository offers a premade player widget for integration of the [streamomkey-player](https://github.com/streamonkey/streamonkey-player) into a website. 
+This repository offers a premade player widget for integration of the [streamonkey-player](https://github.com/streamonkey/streamonkey-player) into a website. 
 
 This widget scales according and shows/hides elements according to its parent container. A demo implementation can be found in the examples folder.
 
